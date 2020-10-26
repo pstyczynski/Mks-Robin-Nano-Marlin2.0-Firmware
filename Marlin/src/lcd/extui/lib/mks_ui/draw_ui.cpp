@@ -142,9 +142,9 @@ void gCfgItems_init() {
     gCfgItems.fileSysType   = FILE_SYS_SD;
     gCfgItems.wifi_type     = ESP_WIFI;
   #endif  //USE_WIFI_FUNCTION
-  gCfgItems.filamentchange_load_length   = 200;
-  gCfgItems.filamentchange_load_speed    = 1000;
-  gCfgItems.filamentchange_unload_length = 200;
+  gCfgItems.filamentchange_load_length   = 800;
+  gCfgItems.filamentchange_load_speed    = 600;
+  gCfgItems.filamentchange_unload_length = 800;
   gCfgItems.filamentchange_unload_speed  = 1000;
   gCfgItems.filament_limit_temper        = 200;
 
