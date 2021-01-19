@@ -110,6 +110,8 @@
   #define HEATER_BED_PIN                    PA0
 #endif
 
+#define HOTEND_FAN_PIN                      PA2
+
 //
 // Thermocouples
 //
@@ -124,7 +126,8 @@
   #ifdef MKSPWC
     #define SUICIDE_PIN                       PB2   // Enable MKSPWC SUICIDE PIN
     #define SUICIDE_PIN_INVERTING             false // Enable MKSPWC PIN STATE
-    #define KILL_PIN                          PA2   // Enable MKSPWC DET PIN
+   // #define KILL_PIN                          PA2   // Enable MKSPWC DET PIN
+    #define KILL_PIN                          -1   // Enable MKSPWC DET PIN
     #define KILL_PIN_STATE                    true  // Enable MKSPWC PIN STATE
   #endif
 
@@ -137,7 +140,8 @@
   #define WIFI_RESET_PIN			              	PA5   // MKS ESP WIFI RESET PIN
 
   #if ENABLED(MKS_TEST)
-    #define MKS_TEST_POWER_LOSS_PIN           PA2   // PW_DET
+    #define MKS_TEST_POWER_LOSS_PIN           -1   // PW_DET
+    //#define MKS_TEST_POWER_LOSS_PIN           PA2   // PW_DET
     #define MKS_TEST_PS_ON_PIN                PB2   // PW_OFF
   #endif  
 #else
